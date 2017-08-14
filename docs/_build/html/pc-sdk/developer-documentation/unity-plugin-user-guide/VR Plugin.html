@@ -1,0 +1,351 @@
+
+
+<!DOCTYPE html>
+<!--[if IE 8]><html class="no-js lt-ie9" lang="en" > <![endif]-->
+<!--[if gt IE 8]><!--> <html class="no-js" lang="en" > <!--<![endif]-->
+<head>
+  <meta charset="utf-8">
+  
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  
+  <title>Unity Plugin Programming Guide &mdash; test-read-the-docs-sample 0.0.1 documentation</title>
+  
+
+  
+  
+  
+  
+
+  
+
+  
+  
+    
+
+  
+
+  
+  
+    <link rel="stylesheet" href="../../../_static/css/theme.css" type="text/css" />
+  
+
+  
+
+  
+        <link rel="index" title="Index"
+              href="../../../genindex.html"/>
+        <link rel="search" title="Search" href="../../../search.html"/>
+    <link rel="top" title="test-read-the-docs-sample 0.0.1 documentation" href="../../../index.html"/>
+        <link rel="up" title="Welcome to the Unity Plugin User Guide." href="index.html"/>
+        <link rel="next" title="Unreal Platform Plugin User Guide." href="../unreal-platform-plugin/index.html"/>
+        <link rel="prev" title="Release Notes" href="Release Notes.html"/> 
+
+  
+  <script src="../../../_static/js/modernizr.min.js"></script>
+
+</head>
+
+<body class="wy-body-for-nav" role="document">
+
+   
+  <div class="wy-grid-for-nav">
+
+    
+    <nav data-toggle="wy-nav-shift" class="wy-nav-side">
+      <div class="wy-side-scroll">
+        <div class="wy-side-nav-search">
+          
+
+          
+            <a href="../../../index.html" class="icon icon-home"> test-read-the-docs-sample
+          
+
+          
+          </a>
+
+          
+            
+            
+              <div class="version">
+                0.0.1
+              </div>
+            
+          
+
+          
+<div role="search">
+  <form id="rtd-search-form" class="wy-form" action="../../../search.html" method="get">
+    <input type="text" name="q" placeholder="Search docs" />
+    <input type="hidden" name="check_keywords" value="yes" />
+    <input type="hidden" name="area" value="default" />
+  </form>
+</div>
+
+          
+        </div>
+
+        <div class="wy-menu wy-menu-vertical" data-spy="affix" role="navigation" aria-label="main navigation">
+          
+            
+            
+              
+            
+            
+              <p class="caption"><span class="caption-text">Contents:</span></p>
+<ul class="current">
+<li class="toctree-l1 current"><a class="reference internal" href="../../index.html">PC SDK</a><ul class="current">
+<li class="toctree-l2 current"><a class="reference internal" href="../index.html">Welcome to the Developer Documentation.</a><ul class="current">
+<li class="toctree-l3"><a class="reference internal" href="../getting-started/HW Specification.html">Getting Started Guide</a></li>
+<li class="toctree-l3"><a class="reference internal" href="../getting-started/PC SDK Setup.html">SDK Setup</a></li>
+<li class="toctree-l3"><a class="reference internal" href="../pc-sdk-programming-guide/index.html">PC SDK Programming Guide</a></li>
+<li class="toctree-l3"><a class="reference internal" href="../unity-platform-plugin/index.html">Welcome to the Unity Platform Plugin Documentation.</a></li>
+<li class="toctree-l3 current"><a class="reference internal" href="index.html">Welcome to the Unity Plugin User Guide.</a><ul class="current">
+<li class="toctree-l4"><a class="reference internal" href="FQA.html">Unity Plugin FQA</a></li>
+<li class="toctree-l4"><a class="reference internal" href="Release Notes.html">Release Notes</a></li>
+<li class="toctree-l4 current"><a class="current reference internal" href="#">Unity Plugin Programming Guide</a></li>
+</ul>
+</li>
+<li class="toctree-l3"><a class="reference internal" href="../unreal-platform-plugin/index.html">Unreal Platform Plugin User Guide.</a></li>
+<li class="toctree-l3"><a class="reference internal" href="../unreal-plugin-user-guide/index.html">Welcome to Unreal Plugin User Guide.</a></li>
+<li class="toctree-l3"><a class="reference internal" href="../key-mapping.html">Key Mapping</a></li>
+<li class="toctree-l3"><a class="reference internal" href="../VRTK-plugin-programming-guide.html">VRTK Unity Plugin Programming Guide</a></li>
+</ul>
+</li>
+<li class="toctree-l2"><a class="reference internal" href="../../developer-release-guide/index.html">Release Guide.</a></li>
+<li class="toctree-l2"><a class="reference internal" href="../../utilities/index.html">Welcome to Hypreal Utilities.</a></li>
+</ul>
+</li>
+<li class="toctree-l1"><a class="reference internal" href="../../../platform-sdk/index.html">Platform SDK</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../../../bigData-sdk/index.html">BigData SDK</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../../../audio-sdk/index.html">Audio SDK</a></li>
+</ul>
+
+            
+          
+        </div>
+      </div>
+    </nav>
+
+    <section data-toggle="wy-nav-shift" class="wy-nav-content-wrap">
+
+      
+      <nav class="wy-nav-top" role="navigation" aria-label="top navigation">
+        
+          <i data-toggle="wy-nav-top" class="fa fa-bars"></i>
+          <a href="../../../index.html">test-read-the-docs-sample</a>
+        
+      </nav>
+
+
+      
+      <div class="wy-nav-content">
+        <div class="rst-content">
+          
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+<div role="navigation" aria-label="breadcrumbs navigation">
+
+  <ul class="wy-breadcrumbs">
+    
+      <li><a href="../../../index.html">Docs</a> &raquo;</li>
+        
+          <li><a href="../../index.html">PC SDK</a> &raquo;</li>
+        
+          <li><a href="../index.html">Welcome to the Developer Documentation.</a> &raquo;</li>
+        
+          <li><a href="index.html">Welcome to the Unity Plugin User Guide.</a> &raquo;</li>
+        
+      <li>Unity Plugin Programming Guide</li>
+    
+    
+      <li class="wy-breadcrumbs-aside">
+        
+            
+            <a href="../../../_sources/pc-sdk/developer-documentation/unity-plugin-user-guide/VR Plugin.md.txt" rel="nofollow"> View page source</a>
+          
+        
+      </li>
+    
+  </ul>
+
+  
+  <hr/>
+</div>
+          <div role="main" class="document" itemscope="itemscope" itemtype="http://schema.org/Article">
+           <div itemprop="articleBody">
+            
+  <div class="section" id="unity-plugin-programming-guide">
+<span id="unity-plugin-programming-guide"></span><h1>Unity Plugin Programming Guide<a class="headerlink" href="#unity-plugin-programming-guide" title="Permalink to this headline">¶</a></h1>
+<p><br></p>
+<div class="section" id="hyperealvr-unity-plugin-programming-guide">
+<span id="hyperealvr-unity-plugin-programming-guide"></span><h2>HyperealVR Unity Plugin Programming Guide<a class="headerlink" href="#hyperealvr-unity-plugin-programming-guide" title="Permalink to this headline">¶</a></h2>
+<ol class="simple">
+<li>There're two ways to add HyperealVR support:<ol>
+<li>Drag and drop the &quot;HyperealVRMain&quot; to the Hierarchy window to create a HyperealVR main instance and add your player move controller to this to move your character.
+<img alt="" src="../../../_images/1.a.png" /></li>
+</ol>
+</li>
+<li>Select your gmaeobject which you want to used as VR camera and add HyCamera script:
+<img alt="" src="../../../_images/1.b.1.png" />
+Then click the Expand button:
+<img alt="" src="../../../_images/1.b.2.png" />
+The Expand operation will change your game object to support VR.
+<img alt="" src="../../../_images/1.b.3.png" />
+Click the &quot;Collapse&quot; button on the Camera(Rig) object can reverse the Expand operation.
+<img alt="" src="../../../_images/1.b.4.png" /></li>
+<li>You can skip 3 ~ 4 topic if you’re intending to use Hypereal VR without position tracking. You can use: HyperealVR.Instance.IsTrackingEnabled to get whether the position tracking is enabled or not</li>
+<li>You can add HyTrackObjRig.prefab to your scene to get a quick access of hypereal models.</li>
+<li>Add your input pointer. We provide two kinds of input pointer: Laser Pointer, Touch Pointer
+<img alt="" src="../../../_images/4.png" /></li>
+<li>Add your UI in VR.</li>
+<li>You can use the native UGUI with the Canvas' render mode set to World Space.
+<img alt="" src="../../../_images/5.a.1.png" />
+<img alt="" src="../../../_images/5.a.2.png" /></li>
+<li>You can also create an empty game object and add the HyUI component which provides a world space UGUI solution with performance optimized.
+<img alt="" src="../../../_images/5.b.1.png" />
+<img alt="" src="../../../_images/5.b.2.png" />
+Note: there is a known bug from Unity (Version 5.1, 5.2, 5.3) which will cause Unity Editor to crash when render ui to texture.
+http://forum.unity3d.com/threads/anyone-know-what-this-error-means-m_size-k_reference_bit.388339/
+https://issuetracker.unity3d.com/issues/after-multiple-m-size-k-reference-bit-errors-unity-crashes-at-fullparameterpreparer-onpreparetexture</li>
+</ol>
+<p><br></p>
+</div>
+<div class="section" id="advance-topics">
+<span id="advance-topics"></span><h2>Advance Topics<a class="headerlink" href="#advance-topics" title="Permalink to this headline">¶</a></h2>
+<div class="section" id="apis">
+<span id="apis"></span><h3><strong>APIs</strong>:<a class="headerlink" href="#apis" title="Permalink to this headline">¶</a></h3>
+<p><code class="docutils literal"><span class="pre">HyperealVR</span></code> is an instance that provides most of the functions that developer can use, so check the <code class="docutils literal"><span class="pre">HyperealVR.cs</span></code>.</p>
+<p><br></p>
+</div>
+<div class="section" id="get-hmd-controller-pose">
+<span id="get-hmd-controller-pose"></span><h3><strong>Get HMD/Controller Pose</strong>:<a class="headerlink" href="#get-hmd-controller-pose" title="Permalink to this headline">¶</a></h3>
+<p>You can get the tracking pose of the HMD and controllers by either add HyTrackObj component to a game object or just use <code class="docutils literal"><span class="pre">HyperealVR.Instance.GetTrackingState()</span></code>.</p>
+<p><br></p>
+</div>
+<div class="section" id="retrived-send-custom-message">
+<span id="retrived-send-custom-message"></span><h3><strong>Retrived/Send Custom message</strong>:<a class="headerlink" href="#retrived-send-custom-message" title="Permalink to this headline">¶</a></h3>
+<p>We provide event <code class="docutils literal"><span class="pre">OnHyMessage</span></code> to retrieve message like quit, focus, status, ipd changed etc. from the SDK runtime. You can refer the usage in HyperealPlugin.cs and UpdateMsg at HyperealVR.cs.</p>
+<p><br></p>
+</div>
+<div class="section" id="check-hypereal-vr-system">
+<span id="check-hypereal-vr-system"></span><h3><strong>Check Hypereal VR System</strong>:<a class="headerlink" href="#check-hypereal-vr-system" title="Permalink to this headline">¶</a></h3>
+<p>Integrate with other VR plugin(like OpenVR, Oculus). Use HyperealVR.IsHyperealPresent to check whether the Hypreal VR device is current plugin or not, then chose which VR plugin you should toggle on. See <code class="docutils literal"><span class="pre">SelectVRPluginDemo.cs</span></code> for a practice.</p>
+<p><br></p>
+</div>
+<div class="section" id="multi-camera">
+<span id="multi-camera"></span><h3><strong>Multi-camera</strong>:<a class="headerlink" href="#multi-camera" title="Permalink to this headline">¶</a></h3>
+<p>You can use multi-camera just like the normal camera. You can switch between cameras and use layer to manage the scene. Note that when you set layer of a HyCamera, make sure you're making change to the camera with suffix of '(eye)'.</p>
+<p><br></p>
+</div>
+<div class="section" id="default-setting-ui">
+<span id="default-setting-ui"></span><h3><strong>Default Setting UI</strong>:<a class="headerlink" href="#default-setting-ui" title="Permalink to this headline">¶</a></h3>
+<p>We provide a default setting UI that can be opened by pressing 'M' on keyboard or the menu button on left controller. It can be enabled by <code class="docutils literal"><span class="pre">HyperealVR.Instance.EnableSettingUI(true)</span></code>.</p>
+<p><br></p>
+</div>
+<div class="section" id="mirror-type">
+<span id="mirror-type"></span><h3><strong>Mirror Type</strong>:<a class="headerlink" href="#mirror-type" title="Permalink to this headline">¶</a></h3>
+<p>You can set <code class="docutils literal"><span class="pre">HyperealVR.Instance.MirrorType</span></code> and <code class="docutils literal"><span class="pre">HyperealVR.Instance.MirrorMode</span></code> to change the mirror window.</p>
+<p><br></p>
+</div>
+<div class="section" id="loading-helper">
+<span id="loading-helper"></span><h3><strong>Loading Helper</strong>:<a class="headerlink" href="#loading-helper" title="Permalink to this headline">¶</a></h3>
+<p>We provide a simple loading helper in case the game not submit frames while loading a new scene.</p>
+<p>The usage of this helper is really simple :</p>
+<p>You just need call the <code class="docutils literal"><span class="pre">Begin(string</span> <span class="pre">levelName,</span> <span class="pre">Texture2D</span> <span class="pre">loadingTex)</span></code> when you need load a new scene.</p>
+<div class="highlight-"><div class="highlight"><pre><span></span>{
+  // Start loading...
+  Texture2D tex = Resource.Load(&quot;TexPathHere&quot;);
+  Hypereal.HyLoadingHelper.Begin(&quot;newScene&quot;, tex);
+}
+</pre></div>
+</div>
+</div>
+</div>
+</div>
+
+
+           </div>
+           <div class="articleComments">
+            
+           </div>
+          </div>
+          <footer>
+  
+    <div class="rst-footer-buttons" role="navigation" aria-label="footer navigation">
+      
+        <a href="../unreal-platform-plugin/index.html" class="btn btn-neutral float-right" title="Unreal Platform Plugin User Guide." accesskey="n" rel="next">Next <span class="fa fa-arrow-circle-right"></span></a>
+      
+      
+        <a href="Release Notes.html" class="btn btn-neutral" title="Release Notes" accesskey="p" rel="prev"><span class="fa fa-arrow-circle-left"></span> Previous</a>
+      
+    </div>
+  
+
+  <hr/>
+
+  <div role="contentinfo">
+    <p>
+        &copy; Copyright 2017, yongzhoulu.
+
+    </p>
+  </div>
+  Built with <a href="http://sphinx-doc.org/">Sphinx</a> using a <a href="https://github.com/snide/sphinx_rtd_theme">theme</a> provided by <a href="https://readthedocs.org">Read the Docs</a>. 
+
+</footer>
+
+        </div>
+      </div>
+
+    </section>
+
+  </div>
+  
+
+
+  
+
+    <script type="text/javascript">
+        var DOCUMENTATION_OPTIONS = {
+            URL_ROOT:'../../../',
+            VERSION:'0.0.1',
+            COLLAPSE_INDEX:false,
+            FILE_SUFFIX:'.html',
+            HAS_SOURCE:  true,
+            SOURCELINK_SUFFIX: '.txt'
+        };
+    </script>
+      <script type="text/javascript" src="../../../_static/jquery.js"></script>
+      <script type="text/javascript" src="../../../_static/underscore.js"></script>
+      <script type="text/javascript" src="../../../_static/doctools.js"></script>
+
+  
+
+  
+  
+    <script type="text/javascript" src="../../../_static/js/theme.js"></script>
+  
+
+  
+  
+  <script type="text/javascript">
+      jQuery(function () {
+          SphinxRtdTheme.StickyNav.enable();
+      });
+  </script>
+   
+
+</body>
+</html>

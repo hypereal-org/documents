@@ -1,0 +1,343 @@
+
+
+<!DOCTYPE html>
+<!--[if IE 8]><html class="no-js lt-ie9" lang="en" > <![endif]-->
+<!--[if gt IE 8]><!--> <html class="no-js" lang="en" > <!--<![endif]-->
+<head>
+  <meta charset="utf-8">
+  
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  
+  <title>Room &mdash; test-read-the-docs-sample 0.0.1 documentation</title>
+  
+
+  
+  
+  
+  
+
+  
+
+  
+  
+    
+
+  
+
+  
+  
+    <link rel="stylesheet" href="../../_static/css/theme.css" type="text/css" />
+  
+
+  
+
+  
+        <link rel="index" title="Index"
+              href="../../genindex.html"/>
+        <link rel="search" title="Search" href="../../search.html"/>
+    <link rel="top" title="test-read-the-docs-sample 0.0.1 documentation" href="../../index.html"/>
+        <link rel="up" title="Welcome to the Developer Documentation." href="index.html"/>
+        <link rel="next" title="Startup and Shutdown" href="Startup And Shutdown.html"/>
+        <link rel="prev" title="Pop And Free Message" href="Pop And Free Message.html"/> 
+
+  
+  <script src="../../_static/js/modernizr.min.js"></script>
+
+</head>
+
+<body class="wy-body-for-nav" role="document">
+
+   
+  <div class="wy-grid-for-nav">
+
+    
+    <nav data-toggle="wy-nav-shift" class="wy-nav-side">
+      <div class="wy-side-scroll">
+        <div class="wy-side-nav-search">
+          
+
+          
+            <a href="../../index.html" class="icon icon-home"> test-read-the-docs-sample
+          
+
+          
+          </a>
+
+          
+            
+            
+              <div class="version">
+                0.0.1
+              </div>
+            
+          
+
+          
+<div role="search">
+  <form id="rtd-search-form" class="wy-form" action="../../search.html" method="get">
+    <input type="text" name="q" placeholder="Search docs" />
+    <input type="hidden" name="check_keywords" value="yes" />
+    <input type="hidden" name="area" value="default" />
+  </form>
+</div>
+
+          
+        </div>
+
+        <div class="wy-menu wy-menu-vertical" data-spy="affix" role="navigation" aria-label="main navigation">
+          
+            
+            
+              
+            
+            
+              <p class="caption"><span class="caption-text">Contents:</span></p>
+<ul class="current">
+<li class="toctree-l1"><a class="reference internal" href="../../pc-sdk/index.html">PC SDK</a></li>
+<li class="toctree-l1 current"><a class="reference internal" href="../index.html">Platform SDK</a><ul class="current">
+<li class="toctree-l2 current"><a class="reference internal" href="index.html">Welcome to the Developer Documentation.</a><ul class="current">
+<li class="toctree-l3"><a class="reference internal" href="Authorization.html">Authorization</a></li>
+<li class="toctree-l3"><a class="reference internal" href="Building With Hypereal Platform SDK.html">Building With Hypereal Platform SDK</a></li>
+<li class="toctree-l3"><a class="reference internal" href="Matchmaking.html">Matchmaking</a></li>
+<li class="toctree-l3"><a class="reference internal" href="Networking.html">Networking</a></li>
+<li class="toctree-l3"><a class="reference internal" href="Pop And Free Message.html">Pop And Free Message</a></li>
+<li class="toctree-l3 current"><a class="current reference internal" href="#">Room</a><ul>
+<li class="toctree-l4"><a class="reference internal" href="#overview">Overview</a></li>
+<li class="toctree-l4"><a class="reference internal" href="#api-introduction">API Introduction</a></li>
+</ul>
+</li>
+<li class="toctree-l3"><a class="reference internal" href="Startup And Shutdown.html">Startup and Shutdown</a></li>
+<li class="toctree-l3"><a class="reference internal" href="User.html">User</a></li>
+</ul>
+</li>
+<li class="toctree-l2"><a class="reference internal" href="../developer-release-guide/index.html">Welcome to the Developer Release Guide.</a></li>
+</ul>
+</li>
+<li class="toctree-l1"><a class="reference internal" href="../../bigData-sdk/index.html">BigData SDK</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../../audio-sdk/index.html">Audio SDK</a></li>
+</ul>
+
+            
+          
+        </div>
+      </div>
+    </nav>
+
+    <section data-toggle="wy-nav-shift" class="wy-nav-content-wrap">
+
+      
+      <nav class="wy-nav-top" role="navigation" aria-label="top navigation">
+        
+          <i data-toggle="wy-nav-top" class="fa fa-bars"></i>
+          <a href="../../index.html">test-read-the-docs-sample</a>
+        
+      </nav>
+
+
+      
+      <div class="wy-nav-content">
+        <div class="rst-content">
+          
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+<div role="navigation" aria-label="breadcrumbs navigation">
+
+  <ul class="wy-breadcrumbs">
+    
+      <li><a href="../../index.html">Docs</a> &raquo;</li>
+        
+          <li><a href="../index.html">Platform SDK</a> &raquo;</li>
+        
+          <li><a href="index.html">Welcome to the Developer Documentation.</a> &raquo;</li>
+        
+      <li>Room</li>
+    
+    
+      <li class="wy-breadcrumbs-aside">
+        
+            
+            <a href="../../_sources/platform-sdk/development-documentation/Room.md.txt" rel="nofollow"> View page source</a>
+          
+        
+      </li>
+    
+  </ul>
+
+  
+  <hr/>
+</div>
+          <div role="main" class="document" itemscope="itemscope" itemtype="http://schema.org/Article">
+           <div itemprop="articleBody">
+            
+  <div class="section" id="room">
+<span id="room"></span><h1>Room<a class="headerlink" href="#room" title="Permalink to this headline">¶</a></h1>
+<p><br></p>
+<div class="section" id="overview">
+<span id="overview"></span><h2>Overview<a class="headerlink" href="#overview" title="Permalink to this headline">¶</a></h2>
+</div>
+<div class="section" id="api-introduction">
+<span id="api-introduction"></span><h2>API Introduction<a class="headerlink" href="#api-introduction" title="Permalink to this headline">¶</a></h2>
+<div class="section" id="get-current-room">
+<span id="get-current-room"></span><h3>Get Current Room<a class="headerlink" href="#get-current-room" title="Permalink to this headline">¶</a></h3>
+<div class="highlight-default"><div class="highlight"><pre><span></span><span class="n">HypRoom</span><span class="p">()</span><span class="o">-&gt;</span><span class="n">GetCurrentRoom</span><span class="p">()</span>
+</pre></div>
+</div>
+<p>A message with type ::EHypMessageType_Room_GetCurrentRoom will be generated in response.</p>
+<p>Call message-&gt;HasError() to check if an error occurred.</p>
+<p>If no error occurred, the message will contain a payload of type hypDataRoomInfo.</p>
+<p>You can extract the payload data from the message via HypRoom()-&gt;ExtractMessageData();</p>
+</div>
+<div class="section" id="create-a-room">
+<span id="create-a-room"></span><h3>Create A Room<a class="headerlink" href="#create-a-room" title="Permalink to this headline">¶</a></h3>
+<div class="highlight-default"><div class="highlight"><pre><span></span><span class="n">HypRoom</span><span class="p">()</span><span class="o">-&gt;</span><span class="n">CreateRoom</span><span class="p">(</span><span class="n">const</span> <span class="n">char</span><span class="o">*</span> <span class="n">roomName</span><span class="p">,</span> <span class="n">const</span> <span class="n">char</span><span class="o">*</span> <span class="n">roomDescription</span><span class="p">,</span> <span class="nb">int</span> <span class="n">maxUserNumber</span><span class="p">)</span>
+</pre></div>
+</div>
+<p>A message with type ::EHypMessageType_Room_CreateRoom will be generated in response, and
+you can get this message via HypMessageManager()-&gt;Pop().</p>
+<p>Call message-&gt;HasError() to check if an error occurred.</p>
+<p>If no error occurred, the message will contain a payload of type hypDataRoomInfo*.</p>
+<p>You can extract the payload data from the message via HypRoom()-&gt;ExtractMessageData();</p>
+<p>Note that you can't create a room if you are already in a room.</p>
+</div>
+<div class="section" id="get-room-info">
+<span id="get-room-info"></span><h3>Get Room Info<a class="headerlink" href="#get-room-info" title="Permalink to this headline">¶</a></h3>
+<div class="highlight-default"><div class="highlight"><pre><span></span><span class="n">HypRoom</span><span class="p">()</span><span class="o">-&gt;</span><span class="n">GetRoomInfo</span><span class="p">(</span><span class="n">hypID_t</span> <span class="n">roomID</span><span class="p">)</span>
+</pre></div>
+</div>
+<p>A message with type ::EHypMessageType_Room_GetRoomInfo will be generated in response, and you can get this message via HypMessageManager()-&gt;Pop().</p>
+<p>Call message-&gt;HasError() to check if an error occurred.</p>
+<p>If no error occurred, the message will contain a payload of type hypDataRoomInfo*.</p>
+<p>You can extract the payload data from the message via HypRoom()-&gt;ExtractMessageData();</p>
+</div>
+<div class="section" id="get-room-list">
+<span id="get-room-list"></span><h3>Get Room List<a class="headerlink" href="#get-room-list" title="Permalink to this headline">¶</a></h3>
+<div class="highlight-default"><div class="highlight"><pre><span></span><span class="n">HypRoom</span><span class="p">()</span><span class="o">-&gt;</span><span class="n">GetRoomList</span><span class="p">(</span><span class="nb">int</span> <span class="n">roomPageIndex</span><span class="p">)</span>
+</pre></div>
+</div>
+<p>A message with type ::EHypMessageType_Room_GetRoomList will be generated in response, and you can get this message via HypMessageManager()-&gt;Pop().</p>
+<p>Call message-&gt;HasError() to check if an error occurred.</p>
+<p>If no error occurred, the message will contain a payload of type hypDataRoomList*.</p>
+<p>You can extract the payload data from the message via HypRoom()-&gt;ExtractMessageData();</p>
+</div>
+<div class="section" id="kick-room-user">
+<span id="kick-room-user"></span><h3>Kick Room User<a class="headerlink" href="#kick-room-user" title="Permalink to this headline">¶</a></h3>
+<div class="highlight-default"><div class="highlight"><pre><span></span><span class="n">HypRoom</span><span class="p">()</span><span class="o">-&gt;</span><span class="n">KickRoomUser</span><span class="p">(</span><span class="n">hypID_t</span> <span class="n">userID</span><span class="p">)</span>
+</pre></div>
+</div>
+<p>A message with type ::EHypMessageType_Room_KickRoomUser will be generated in response, and you can get this message via HypMessageManager()-&gt;Pop().</p>
+<p>Call message-&gt;HasError() to check if an error occurred.</p>
+<p>If no error occurred, the message will contain a payload of type hypDataRoomInfo*.</p>
+<p>You can extract the payload data from the message via HypRoom()-&gt;ExtractMessageData();</p>
+<p>Other room members will received a notification message with type ::EHypMessageType_Notification_Room_RoomUpdate</p>
+</div>
+<div class="section" id="join-room">
+<span id="join-room"></span><h3>Join Room<a class="headerlink" href="#join-room" title="Permalink to this headline">¶</a></h3>
+<div class="highlight-default"><div class="highlight"><pre><span></span><span class="n">HypRoom</span><span class="p">()</span><span class="o">-&gt;</span><span class="n">JoinRoom</span><span class="p">(</span><span class="n">hypID_t</span> <span class="n">roomID</span><span class="p">)</span>
+</pre></div>
+</div>
+<p>A message with type ::EHypMessageType_Room_JoinRoom will be generated in response, and you can get this message via HypMessageManager()-&gt;Pop().</p>
+<p>Call message-&gt;HasError() to check if an error occurred.</p>
+<p>If no error occurred, the message will contain a payload of type hypDataRoomInfo*.</p>
+<p>You can extract the payload data from the message via HypRoom()-&gt;ExtractMessageData();</p>
+<p>Other room members will received a notification message with type ::EHypMessageType_Notification_Room_RoomUpdate</p>
+</div>
+<div class="section" id="leave-room">
+<span id="leave-room"></span><h3>Leave Room<a class="headerlink" href="#leave-room" title="Permalink to this headline">¶</a></h3>
+<div class="highlight-default"><div class="highlight"><pre><span></span><span class="n">HypRoom</span><span class="p">()</span><span class="o">-&gt;</span><span class="n">LeaveRoom</span><span class="p">()</span>
+</pre></div>
+</div>
+<p>A message with type ::EHypMessageType_Room_LeaveRoom will be generated in response, and you can get this message via HypMessageManager()-&gt;Pop().</p>
+<p>Call message-&gt;HasError() to check if an error occurred.</p>
+<p>The message has no payload, if no error occured, it means success.</p>
+<p>Other room members will received a notification message with type ::EHypMessageType_Notification_Room_RoomUpdate</p>
+<p>If room owner leave his room, the room will be destroyed.</p>
+</div>
+</div>
+</div>
+
+
+           </div>
+           <div class="articleComments">
+            
+           </div>
+          </div>
+          <footer>
+  
+    <div class="rst-footer-buttons" role="navigation" aria-label="footer navigation">
+      
+        <a href="Startup And Shutdown.html" class="btn btn-neutral float-right" title="Startup and Shutdown" accesskey="n" rel="next">Next <span class="fa fa-arrow-circle-right"></span></a>
+      
+      
+        <a href="Pop And Free Message.html" class="btn btn-neutral" title="Pop And Free Message" accesskey="p" rel="prev"><span class="fa fa-arrow-circle-left"></span> Previous</a>
+      
+    </div>
+  
+
+  <hr/>
+
+  <div role="contentinfo">
+    <p>
+        &copy; Copyright 2017, yongzhoulu.
+
+    </p>
+  </div>
+  Built with <a href="http://sphinx-doc.org/">Sphinx</a> using a <a href="https://github.com/snide/sphinx_rtd_theme">theme</a> provided by <a href="https://readthedocs.org">Read the Docs</a>. 
+
+</footer>
+
+        </div>
+      </div>
+
+    </section>
+
+  </div>
+  
+
+
+  
+
+    <script type="text/javascript">
+        var DOCUMENTATION_OPTIONS = {
+            URL_ROOT:'../../',
+            VERSION:'0.0.1',
+            COLLAPSE_INDEX:false,
+            FILE_SUFFIX:'.html',
+            HAS_SOURCE:  true,
+            SOURCELINK_SUFFIX: '.txt'
+        };
+    </script>
+      <script type="text/javascript" src="../../_static/jquery.js"></script>
+      <script type="text/javascript" src="../../_static/underscore.js"></script>
+      <script type="text/javascript" src="../../_static/doctools.js"></script>
+
+  
+
+  
+  
+    <script type="text/javascript" src="../../_static/js/theme.js"></script>
+  
+
+  
+  
+  <script type="text/javascript">
+      jQuery(function () {
+          SphinxRtdTheme.StickyNav.enable();
+      });
+  </script>
+   
+
+</body>
+</html>

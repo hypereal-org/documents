@@ -1,0 +1,355 @@
+
+
+<!DOCTYPE html>
+<!--[if IE 8]><html class="no-js lt-ie9" lang="en" > <![endif]-->
+<!--[if gt IE 8]><!--> <html class="no-js" lang="en" > <!--<![endif]-->
+<head>
+  <meta charset="utf-8">
+  
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  
+  <title>Device &mdash; test-read-the-docs-sample 0.0.1 documentation</title>
+  
+
+  
+  
+  
+  
+
+  
+
+  
+  
+    
+
+  
+
+  
+  
+    <link rel="stylesheet" href="../../../_static/css/theme.css" type="text/css" />
+  
+
+  
+
+  
+        <link rel="index" title="Index"
+              href="../../../genindex.html"/>
+        <link rel="search" title="Search" href="../../../search.html"/>
+    <link rel="top" title="test-read-the-docs-sample 0.0.1 documentation" href="../../../index.html"/>
+        <link rel="up" title="PC SDK Programming Guide" href="index.html"/>
+        <link rel="next" title="Graphics Context" href="Graphics Context.html"/>
+        <link rel="prev" title="Controller" href="Controller.html"/> 
+
+  
+  <script src="../../../_static/js/modernizr.min.js"></script>
+
+</head>
+
+<body class="wy-body-for-nav" role="document">
+
+   
+  <div class="wy-grid-for-nav">
+
+    
+    <nav data-toggle="wy-nav-shift" class="wy-nav-side">
+      <div class="wy-side-scroll">
+        <div class="wy-side-nav-search">
+          
+
+          
+            <a href="../../../index.html" class="icon icon-home"> test-read-the-docs-sample
+          
+
+          
+          </a>
+
+          
+            
+            
+              <div class="version">
+                0.0.1
+              </div>
+            
+          
+
+          
+<div role="search">
+  <form id="rtd-search-form" class="wy-form" action="../../../search.html" method="get">
+    <input type="text" name="q" placeholder="Search docs" />
+    <input type="hidden" name="check_keywords" value="yes" />
+    <input type="hidden" name="area" value="default" />
+  </form>
+</div>
+
+          
+        </div>
+
+        <div class="wy-menu wy-menu-vertical" data-spy="affix" role="navigation" aria-label="main navigation">
+          
+            
+            
+              
+            
+            
+              <p class="caption"><span class="caption-text">Contents:</span></p>
+<ul class="current">
+<li class="toctree-l1 current"><a class="reference internal" href="../../index.html">PC SDK</a><ul class="current">
+<li class="toctree-l2 current"><a class="reference internal" href="../index.html">Welcome to the Developer Documentation.</a><ul class="current">
+<li class="toctree-l3"><a class="reference internal" href="../getting-started/HW Specification.html">Getting Started Guide</a></li>
+<li class="toctree-l3"><a class="reference internal" href="../getting-started/PC SDK Setup.html">SDK Setup</a></li>
+<li class="toctree-l3 current"><a class="reference internal" href="index.html">PC SDK Programming Guide</a><ul class="current">
+<li class="toctree-l4"><a class="reference internal" href="Building with Hypereal VR SDK.html">Building with Hypereal VR SDK</a></li>
+<li class="toctree-l4"><a class="reference internal" href="Controller.html">Controller</a></li>
+<li class="toctree-l4 current"><a class="current reference internal" href="#">Device</a></li>
+<li class="toctree-l4"><a class="reference internal" href="Graphics Context.html">Graphics Context</a></li>
+<li class="toctree-l4"><a class="reference internal" href="Introduction.html">Introduction</a></li>
+<li class="toctree-l4"><a class="reference internal" href="Queue Ahead.html">Queue Ahead</a></li>
+<li class="toctree-l4"><a class="reference internal" href="Startup and Shutdown.html">Startup and Shutdown</a></li>
+<li class="toctree-l4"><a class="reference internal" href="Utilities.html">Utilities</a></li>
+</ul>
+</li>
+<li class="toctree-l3"><a class="reference internal" href="../unity-platform-plugin/index.html">Welcome to the Unity Platform Plugin Documentation.</a></li>
+<li class="toctree-l3"><a class="reference internal" href="../unity-plugin-user-guide/index.html">Welcome to the Unity Plugin User Guide.</a></li>
+<li class="toctree-l3"><a class="reference internal" href="../unreal-platform-plugin/index.html">Unreal Platform Plugin User Guide.</a></li>
+<li class="toctree-l3"><a class="reference internal" href="../unreal-plugin-user-guide/index.html">Welcome to Unreal Plugin User Guide.</a></li>
+<li class="toctree-l3"><a class="reference internal" href="../key-mapping.html">Key Mapping</a></li>
+<li class="toctree-l3"><a class="reference internal" href="../VRTK-plugin-programming-guide.html">VRTK Unity Plugin Programming Guide</a></li>
+</ul>
+</li>
+<li class="toctree-l2"><a class="reference internal" href="../../developer-release-guide/index.html">Release Guide.</a></li>
+<li class="toctree-l2"><a class="reference internal" href="../../utilities/index.html">Welcome to Hypreal Utilities.</a></li>
+</ul>
+</li>
+<li class="toctree-l1"><a class="reference internal" href="../../../platform-sdk/index.html">Platform SDK</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../../../bigData-sdk/index.html">BigData SDK</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../../../audio-sdk/index.html">Audio SDK</a></li>
+</ul>
+
+            
+          
+        </div>
+      </div>
+    </nav>
+
+    <section data-toggle="wy-nav-shift" class="wy-nav-content-wrap">
+
+      
+      <nav class="wy-nav-top" role="navigation" aria-label="top navigation">
+        
+          <i data-toggle="wy-nav-top" class="fa fa-bars"></i>
+          <a href="../../../index.html">test-read-the-docs-sample</a>
+        
+      </nav>
+
+
+      
+      <div class="wy-nav-content">
+        <div class="rst-content">
+          
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+<div role="navigation" aria-label="breadcrumbs navigation">
+
+  <ul class="wy-breadcrumbs">
+    
+      <li><a href="../../../index.html">Docs</a> &raquo;</li>
+        
+          <li><a href="../../index.html">PC SDK</a> &raquo;</li>
+        
+          <li><a href="../index.html">Welcome to the Developer Documentation.</a> &raquo;</li>
+        
+          <li><a href="index.html">PC SDK Programming Guide</a> &raquo;</li>
+        
+      <li>Device</li>
+    
+    
+      <li class="wy-breadcrumbs-aside">
+        
+            
+            <a href="../../../_sources/pc-sdk/developer-documentation/pc-sdk-programming-guide/Device.md.txt" rel="nofollow"> View page source</a>
+          
+        
+      </li>
+    
+  </ul>
+
+  
+  <hr/>
+</div>
+          <div role="main" class="document" itemscope="itemscope" itemtype="http://schema.org/Article">
+           <div itemprop="articleBody">
+            
+  <div class="section" id="device">
+<span id="device"></span><h1>Device<a class="headerlink" href="#device" title="Permalink to this headline">¶</a></h1>
+<p><br>
+Hypereal VR hardwares include HMD (Head Mounted Display), touch controllers and tracking ability. They will return different information at runtime. We call them sub devices. Each sub device has a corresponding enumeration.</p>
+<div class="section" id="sub-devices">
+<span id="sub-devices"></span><h2>Sub Devices<a class="headerlink" href="#sub-devices" title="Permalink to this headline">¶</a></h2>
+<p>Hypereal VR hardwares include HMD (Head Mounted Display), two controllers and some trackers. They will return different information at runtime. We call them sub devices. Each sub device has a corresponding enumeration.</p>
+<div class="highlight-default"><div class="highlight"><pre><span></span><span class="n">enum</span> <span class="n">HySubDevice</span>
+<span class="p">{</span>
+    <span class="n">HY_SUBDEV_Unknown</span> <span class="o">=</span> <span class="o">-</span><span class="mi">1</span><span class="p">,</span>                                 <span class="o">/**&lt;</span> <span class="n">Invalid</span> <span class="n">device</span> <span class="nb">type</span><span class="o">.</span> <span class="o">*/</span>
+    <span class="n">HY_SUBDEV_HMD</span> <span class="o">=</span> <span class="mi">0</span><span class="p">,</span>                                      <span class="o">/**&lt;</span> <span class="n">Head</span> <span class="n">Mounted</span> <span class="n">Display</span> <span class="nb">type</span><span class="o">.</span> <span class="o">*/</span>
+    <span class="n">HY_SUBDEV_CONTROLLER</span> <span class="o">=</span> <span class="mh">0x100</span><span class="p">,</span>                           <span class="o">/**&lt;</span> <span class="n">Controller</span> <span class="nb">type</span><span class="o">.</span> <span class="o">*/</span>
+    <span class="n">HY_SUBDEV_CONTROLLER_LEFT</span> <span class="o">=</span> <span class="n">HY_SUBDEV_CONTROLLER</span><span class="p">,</span>       <span class="o">/**&lt;</span> <span class="n">Prediefined</span> <span class="n">left</span> <span class="n">controller</span><span class="o">.</span> <span class="o">*/</span>
+    <span class="n">HY_SUBDEV_CONTROLLER_RIGHT</span> <span class="o">=</span> <span class="n">HY_SUBDEV_CONTROLLER</span> <span class="o">+</span> <span class="mi">1</span><span class="p">,</span>  <span class="o">/**&lt;</span> <span class="n">Prediefined</span> <span class="n">right</span> <span class="n">controller</span><span class="o">.</span> <span class="o">*/</span>
+    <span class="n">HY_SUBDEV_TRACKER</span> <span class="o">=</span> <span class="mh">0x200</span>                               <span class="o">/**&lt;</span> <span class="n">Tracker</span> <span class="nb">type</span><span class="p">,</span> <span class="mh">0x200</span> <span class="o">-</span> <span class="mh">0x299</span><span class="o">.</span> <span class="o">*/</span>
+<span class="p">};</span>
+</pre></div>
+</div>
+<p>You could use macro &quot;HyGetSubDeviceType&quot; to get the type from a sub device ID. And you can use &quot;HySubDeviceType&quot; to define new IDs. For example, the conditions in the following assertions are always satisfied:</p>
+<div class="highlight-default"><div class="highlight"><pre><span></span><span class="k">assert</span><span class="p">(</span><span class="n">HY_SUBDEV_CONTROLLER_LEFT</span>  <span class="o">==</span> <span class="n">HySubDeviceID</span><span class="p">(</span><span class="n">HY_SUBDEV_CONTROLLER</span><span class="p">,</span> <span class="mi">0</span><span class="p">));</span>
+<span class="k">assert</span><span class="p">(</span><span class="n">HY_SUBDEV_CONTROLLER_RIGHT</span> <span class="o">==</span> <span class="n">HySubDeviceID</span><span class="p">(</span><span class="n">HY_SUBDEV_CONTROLLER</span><span class="p">,</span> <span class="mi">1</span><span class="p">));</span>
+<span class="k">assert</span><span class="p">(</span><span class="n">HyGetSubDeviceType</span><span class="p">(</span><span class="n">HY_SUBDEV_CONTROLLER_LEFT</span><span class="p">)</span> <span class="o">==</span> <span class="n">HY_SUBDEV_CONTROLLER</span><span class="p">);</span>
+<span class="k">assert</span><span class="p">(</span><span class="n">HyGetSubDeviceType</span><span class="p">(</span><span class="n">HY_SUBDEV_CONTROLLER_RIGHT</span><span class="p">)</span> <span class="o">==</span> <span class="n">HY_SUBDEV_CONTROLLER</span><span class="p">);</span>
+</pre></div>
+</div>
+</div>
+<div class="section" id="creation-and-release">
+<span id="creation-and-release"></span><h2>Creation and Release<a class="headerlink" href="#creation-and-release" title="Permalink to this headline">¶</a></h2>
+<p>If Hypereal VR SDK is started up successfully, then a device can be created.</p>
+<div class="highlight-default"><div class="highlight"><pre><span></span><span class="n">HyDevice</span> <span class="o">*</span><span class="n">vrDevice</span> <span class="o">=</span> <span class="n">nullptr</span><span class="p">;</span>
+<span class="n">HyResult</span> <span class="n">r</span> <span class="o">=</span> <span class="n">HyCreateInterface</span><span class="p">(</span><span class="n">HyDevice_InterfaceName</span><span class="p">,</span> <span class="mi">0</span><span class="p">,</span> <span class="o">&amp;</span><span class="n">vrDevice</span><span class="p">);</span>
+</pre></div>
+</div>
+<p>The first parameter is the version of a specific interface &quot;HyDevice&quot;. If the device is created successfully, its pointer will be returned.</p>
+<p>To dispose a device, just call its Release method.</p>
+<div class="highlight-default"><div class="highlight"><pre><span></span><span class="n">vrDevice</span><span class="o">-&gt;</span><span class="n">Release</span><span class="p">();</span>
+</pre></div>
+</div>
+<p>An application should never call any device methods if the device is released.</p>
+</div>
+<div class="section" id="runtime-status">
+<span id="runtime-status"></span><h2>Runtime Status<a class="headerlink" href="#runtime-status" title="Permalink to this headline">¶</a></h2>
+<p>Device runtime status may changes each frame. An application should adjust its behavior based on the status.</p>
+<div class="highlight-default"><div class="highlight"><pre><span></span><span class="n">const</span> <span class="n">HyMsgHeader</span><span class="o">*</span> <span class="n">msg</span><span class="p">;</span>
+<span class="n">HyResult</span> <span class="n">r</span> <span class="o">=</span> <span class="n">vrDevice</span><span class="o">-&gt;</span><span class="n">RetrieveMsg</span><span class="p">(</span><span class="o">&amp;</span><span class="n">msg</span><span class="p">);</span>
+</pre></div>
+</div>
+<p>The messages will inform about whether sub devices are connected and tracked, whether the application is on focus (visible), whether the application is pending quit, and whether the inter-papillary distance is changing.</p>
+<p>You can switch on <code class="docutils literal"><span class="pre">msg-&gt;m_type</span></code> to know what the current message is about. You can cast msg to the concrete message type HyXXX to get more information about it.</p>
+<p>Repeatedly call this function until <code class="docutils literal"><span class="pre">msg-&gt;m_type</span></code> become HY_MSG_NONE, to get all available messages. And pass those you don't know how/want to process, to DefaultMsgFunction to let the system aware and use the default behavior.</p>
+</div>
+<div class="section" id="properties">
+<span id="properties"></span><h2>Properties<a class="headerlink" href="#properties" title="Permalink to this headline">¶</a></h2>
+<p>Device properties system provides some predefined properties by enumeration of HyDeviceProperty, like FOV, IPD etc.</p>
+<p>Application would use the functions such as &quot;GetBoolValue()&quot;, &quot;SetBoolValue()&quot;, &quot;GetFloatValue&quot;, &quot;SetFloatValue&quot; and so on to use this system to retrieve or set properties, please not all set/get methods of properties are implemented, if any of them was not implement, these functions will return hyError_NotImplemented.</p>
+</div>
+<div class="section" id="tracking">
+<span id="tracking"></span><h2>Tracking<a class="headerlink" href="#tracking" title="Permalink to this headline">¶</a></h2>
+<p>Tracking is an important feature of Hypereal VR SDK. It introduces new human-computer interaction mode. An application can fetch tracking state for HMD and controllers.</p>
+<div class="highlight-default"><div class="highlight"><pre><span></span><span class="n">HyTrackingState</span> <span class="n">trackingState</span><span class="p">;</span>
+<span class="n">HyResult</span> <span class="n">r</span> <span class="o">=</span> <span class="n">vrDevice</span><span class="o">-&gt;</span><span class="n">GetTrackingState</span><span class="p">(</span><span class="n">HY_SUBDEV_HMD</span><span class="p">,</span> <span class="mi">0</span><span class="p">,</span> <span class="n">trackingState</span><span class="p">);</span>
+</pre></div>
+</div>
+<p>An application should pass a frame number (0 is acceptable) as the second parameter. The main components of tracking state includes pose, linear velocity and acceleration, angular velocity and acceleration. Also the tracking state has a flag to specify whether rotation and position are tracked.</p>
+<p><strong>HY_TRACKING_ROTATION_TRACKED</strong> means rotation part is tracked</p>
+<p><strong>HY_TRACKING_POSITION_TRACKED</strong> means position part is tracked</p>
+<p>Trackers are key components of the tracking system, however we only provide pose information for them.</p>
+<div class="highlight-default"><div class="highlight"><pre><span></span><span class="n">HyPose</span> <span class="n">pose</span><span class="p">;</span>
+<span class="n">HyResult</span> <span class="n">r</span> <span class="o">=</span> <span class="n">vrDevice</span><span class="o">-&gt;</span><span class="n">GetTrackerPose</span><span class="p">(</span><span class="n">HY_SUBDEV_TRACKER_MASTER</span><span class="p">,</span> <span class="n">pose</span><span class="p">);</span>
+</pre></div>
+</div>
+<p>All returned tracking pose is relative to a tracking origin.</p>
+<p><strong>HY_TRACKING_ORIGIN_EYE</strong></p>
+<p><strong>HY_TRACKING_ORIGIN_FLOOR</strong></p>
+<p>An application can set tracking origin type:</p>
+<div class="highlight-default"><div class="highlight"><pre><span></span><span class="n">HyTrackingOrigin</span> <span class="n">preTrackingOrigin</span> <span class="o">=</span> <span class="n">vrDevice</span><span class="o">-&gt;</span><span class="n">ConfigureTrackingOrigin</span><span class="p">(</span><span class="n">HY_TRACKING_ORIGIN_FLOOR</span><span class="p">);</span>
+</pre></div>
+</div>
+<p>This method will return current tracking origin type if passing <strong>HY_TRACKING_ORIGIN_UNKNOWN</strong> as the parameter.</p>
+</div>
+<div class="section" id="without-tracking">
+<span id="without-tracking"></span><h2>Without Tracking<a class="headerlink" href="#without-tracking" title="Permalink to this headline">¶</a></h2>
+<p>Hypereal VR SDK also supports &quot;no tracking&quot; mode for some special product models of Hypereal VR. Developer could checking if current device is tracked or not by property of &quot;HY_PROPERTY_POSITION_TRACKING_ENABLED_BOOL&quot;.</p>
+<p>In this mode, we applied a head model in position of returned pose of a HMD from vrDevice-&gt;GetTrackerPose(). So if you want to do a head model by yourself, please directly ignore position in that &quot;pose&quot;.</p>
+<p><strong>HY_TRACKING_POSITION_TRACKED</strong>, when in tracking mode but this flag was set in flag of pose, we also applied the same head model in it.</p>
+</div>
+</div>
+
+
+           </div>
+           <div class="articleComments">
+            
+           </div>
+          </div>
+          <footer>
+  
+    <div class="rst-footer-buttons" role="navigation" aria-label="footer navigation">
+      
+        <a href="Graphics Context.html" class="btn btn-neutral float-right" title="Graphics Context" accesskey="n" rel="next">Next <span class="fa fa-arrow-circle-right"></span></a>
+      
+      
+        <a href="Controller.html" class="btn btn-neutral" title="Controller" accesskey="p" rel="prev"><span class="fa fa-arrow-circle-left"></span> Previous</a>
+      
+    </div>
+  
+
+  <hr/>
+
+  <div role="contentinfo">
+    <p>
+        &copy; Copyright 2017, yongzhoulu.
+
+    </p>
+  </div>
+  Built with <a href="http://sphinx-doc.org/">Sphinx</a> using a <a href="https://github.com/snide/sphinx_rtd_theme">theme</a> provided by <a href="https://readthedocs.org">Read the Docs</a>. 
+
+</footer>
+
+        </div>
+      </div>
+
+    </section>
+
+  </div>
+  
+
+
+  
+
+    <script type="text/javascript">
+        var DOCUMENTATION_OPTIONS = {
+            URL_ROOT:'../../../',
+            VERSION:'0.0.1',
+            COLLAPSE_INDEX:false,
+            FILE_SUFFIX:'.html',
+            HAS_SOURCE:  true,
+            SOURCELINK_SUFFIX: '.txt'
+        };
+    </script>
+      <script type="text/javascript" src="../../../_static/jquery.js"></script>
+      <script type="text/javascript" src="../../../_static/underscore.js"></script>
+      <script type="text/javascript" src="../../../_static/doctools.js"></script>
+
+  
+
+  
+  
+    <script type="text/javascript" src="../../../_static/js/theme.js"></script>
+  
+
+  
+  
+  <script type="text/javascript">
+      jQuery(function () {
+          SphinxRtdTheme.StickyNav.enable();
+      });
+  </script>
+   
+
+</body>
+</html>

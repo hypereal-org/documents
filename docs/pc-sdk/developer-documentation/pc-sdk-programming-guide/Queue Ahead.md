@@ -1,0 +1,3 @@
+### Queue Ahead
+
+Normally, the CPU begins to process a new frame after both the CPU and GPU work of the previous frame is done.  This, however, will impact the CPU and GPU parallelism which results in a relatively low FPS when the rendering workload is heavy.  To improve CPU and GPU parallelism, the SDK automatically lets CPU start the work for next frame a bit earlier.  Thus the GPU will have a bit more time to process the rendering workload.  In this case, we'll get a better FPS at the cost of a little app-to-photon latency.  Thanks to ATW and ASW, such latency is barely noticeable in real applications.

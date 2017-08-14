@@ -1,0 +1,309 @@
+
+
+<!DOCTYPE html>
+<!--[if IE 8]><html class="no-js lt-ie9" lang="en" > <![endif]-->
+<!--[if gt IE 8]><!--> <html class="no-js" lang="en" > <!--<![endif]-->
+<head>
+  <meta charset="utf-8">
+  
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  
+  <title>Asynchronous Space Warping &mdash; test-read-the-docs-sample 0.0.1 documentation</title>
+  
+
+  
+  
+  
+  
+
+  
+
+  
+  
+    
+
+  
+
+  
+  
+    <link rel="stylesheet" href="../../_static/css/theme.css" type="text/css" />
+  
+
+  
+
+  
+        <link rel="index" title="Index"
+              href="../../genindex.html"/>
+        <link rel="search" title="Search" href="../../search.html"/>
+    <link rel="top" title="test-read-the-docs-sample 0.0.1 documentation" href="../../index.html"/>
+        <link rel="up" title="Welcome to Hypreal Utilities." href="index.html"/>
+        <link rel="next" title="Firmware Upgrade" href="Firmware Upgrade.html"/>
+        <link rel="prev" title="Welcome to Hypreal Utilities." href="index.html"/> 
+
+  
+  <script src="../../_static/js/modernizr.min.js"></script>
+
+</head>
+
+<body class="wy-body-for-nav" role="document">
+
+   
+  <div class="wy-grid-for-nav">
+
+    
+    <nav data-toggle="wy-nav-shift" class="wy-nav-side">
+      <div class="wy-side-scroll">
+        <div class="wy-side-nav-search">
+          
+
+          
+            <a href="../../index.html" class="icon icon-home"> test-read-the-docs-sample
+          
+
+          
+          </a>
+
+          
+            
+            
+              <div class="version">
+                0.0.1
+              </div>
+            
+          
+
+          
+<div role="search">
+  <form id="rtd-search-form" class="wy-form" action="../../search.html" method="get">
+    <input type="text" name="q" placeholder="Search docs" />
+    <input type="hidden" name="check_keywords" value="yes" />
+    <input type="hidden" name="area" value="default" />
+  </form>
+</div>
+
+          
+        </div>
+
+        <div class="wy-menu wy-menu-vertical" data-spy="affix" role="navigation" aria-label="main navigation">
+          
+            
+            
+              
+            
+            
+              <p class="caption"><span class="caption-text">Contents:</span></p>
+<ul class="current">
+<li class="toctree-l1 current"><a class="reference internal" href="../index.html">PC SDK</a><ul class="current">
+<li class="toctree-l2"><a class="reference internal" href="../developer-documentation/index.html">Welcome to the Developer Documentation.</a></li>
+<li class="toctree-l2"><a class="reference internal" href="../developer-release-guide/index.html">Release Guide.</a></li>
+<li class="toctree-l2 current"><a class="reference internal" href="index.html">Welcome to Hypreal Utilities.</a><ul class="current">
+<li class="toctree-l3 current"><a class="current reference internal" href="#">Asynchronous Space Warping</a><ul>
+<li class="toctree-l4"><a class="reference internal" href="#introduction">Introduction</a></li>
+<li class="toctree-l4"><a class="reference internal" href="#asw-vs-atw">ASW vs. ATW</a></li>
+<li class="toctree-l4"><a class="reference internal" href="#asw-benefits">ASW Benefits</a></li>
+<li class="toctree-l4"><a class="reference internal" href="#supported-platform">Supported Platform</a></li>
+<li class="toctree-l4"><a class="reference internal" href="#how-to-enable-disable-asw">How to enable/disable ASW</a></li>
+</ul>
+</li>
+<li class="toctree-l3"><a class="reference internal" href="Firmware Upgrade.html">Firmware Upgrade</a></li>
+</ul>
+</li>
+</ul>
+</li>
+<li class="toctree-l1"><a class="reference internal" href="../../platform-sdk/index.html">Platform SDK</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../../bigData-sdk/index.html">BigData SDK</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../../audio-sdk/index.html">Audio SDK</a></li>
+</ul>
+
+            
+          
+        </div>
+      </div>
+    </nav>
+
+    <section data-toggle="wy-nav-shift" class="wy-nav-content-wrap">
+
+      
+      <nav class="wy-nav-top" role="navigation" aria-label="top navigation">
+        
+          <i data-toggle="wy-nav-top" class="fa fa-bars"></i>
+          <a href="../../index.html">test-read-the-docs-sample</a>
+        
+      </nav>
+
+
+      
+      <div class="wy-nav-content">
+        <div class="rst-content">
+          
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+<div role="navigation" aria-label="breadcrumbs navigation">
+
+  <ul class="wy-breadcrumbs">
+    
+      <li><a href="../../index.html">Docs</a> &raquo;</li>
+        
+          <li><a href="../index.html">PC SDK</a> &raquo;</li>
+        
+          <li><a href="index.html">Welcome to Hypreal Utilities.</a> &raquo;</li>
+        
+      <li>Asynchronous Space Warping</li>
+    
+    
+      <li class="wy-breadcrumbs-aside">
+        
+            
+            <a href="../../_sources/pc-sdk/utilities/Asynchronous Space Warping.md.txt" rel="nofollow"> View page source</a>
+          
+        
+      </li>
+    
+  </ul>
+
+  
+  <hr/>
+</div>
+          <div role="main" class="document" itemscope="itemscope" itemtype="http://schema.org/Article">
+           <div itemprop="articleBody">
+            
+  <div class="section" id="asynchronous-space-warping">
+<span id="asynchronous-space-warping"></span><h1>Asynchronous Space Warping<a class="headerlink" href="#asynchronous-space-warping" title="Permalink to this headline">¶</a></h1>
+<p><br></p>
+<div class="section" id="introduction">
+<span id="introduction"></span><h2>Introduction<a class="headerlink" href="#introduction" title="Permalink to this headline">¶</a></h2>
+<p>Asynchronous Space Warping (ASW) is a frame-rate smoothing technology that is able to track the animation and movement within the scene and generates extrapolated frames from previous frames generated by the VR application accordingly. ASW is automatic and enabled in Hypereal VR Runtime without any additional effort from developers.</p>
+</div>
+<div class="section" id="asw-vs-atw">
+<span id="asw-vs-atw"></span><h2>ASW vs. ATW<a class="headerlink" href="#asw-vs-atw" title="Permalink to this headline">¶</a></h2>
+<p>ASW sounds a bit like ATW (Asynchronous Time Warping) since ATW is capable of generating new frames from previous frames to smooth VR experience as well. The difference is ATW can only track the user's head rotation while ASW goes beyond this and tracks animation and movement within the scene, which including character movement, camera movement, touch controller movement, and the player's own positional movement.</p>
+<p>ASW is not conflicting with ATW, actually ASW is building on top of ATW where ASW is responsible for movement tracking and ATW is responsible for head rotation tracking. By combining ASW and ATW together, we are able to smooth over the whole VR experience, not only for static scene but also for the scenes with animation and movement.</p>
+</div>
+<div class="section" id="asw-benefits">
+<span id="asw-benefits"></span><h2>ASW Benefits<a class="headerlink" href="#asw-benefits" title="Permalink to this headline">¶</a></h2>
+<p>With ASW, even the application rendering speed falls behind the display's refresh rate, the VR experience typically remains smooth and enjoyable, which allows us to reduce the system hardware requirement while maintaining content quality across a wider array of hardware. VR-ready PC is more affordable.</p>
+</div>
+<div class="section" id="supported-platform">
+<span id="supported-platform"></span><h2>Supported Platform<a class="headerlink" href="#supported-platform" title="Permalink to this headline">¶</a></h2>
+<p>ASW is introduced into Hypereal VR Runtime since 0.4 Release.</p>
+<ul class="simple">
+<li>NVIDIA: GTX 900/1000 series</li>
+<li>AMD: RX 400/500 series, R9 Fury/390/290 series</li>
+<li>NVIDIA Display Driver: 372.90 and later</li>
+<li>AMD Display Driver: Crimson ReLive Edition 16.12.1 and later (RX series), Crimson ReLive Edition 17.4.1 and later (R9 series)</li>
+<li>Operating System: Windows 8 / Windows 8.1 / Windows 10, Windows 7 is NOT supported</li>
+</ul>
+</div>
+<div class="section" id="how-to-enable-disable-asw">
+<span id="how-to-enable-disable-asw"></span><h2>How to enable/disable ASW<a class="headerlink" href="#how-to-enable-disable-asw" title="Permalink to this headline">¶</a></h2>
+<p>ASW is enabled by default since 1.0 Release. It is very easy and convenient for users to contrl ASW enablement/disablement.</p>
+<ul class="simple">
+<li>Enable ASW<ol>
+<li>Change &quot;EnableAsw&quot; value to 1 in Data/HVRSDKConfig.cfg</li>
+<li>Restart Hypereal VR Runtime</li>
+<li>ASW is enabled in auto mode (kick in if FPS &lt; 90 and quit otherwise)</li>
+</ol>
+</li>
+<li>ASW mode switch. For debugging and comparing purpose, we provided several ASW modes for selection, which is very convenient to switch by the following hot key at anytime when ASW is enabled in Hypereal VR runtime.<ol>
+<li>CTRL + NUMPAD 1: Disable ASW</li>
+<li>CTRL + NUMPAD 2: Disable ASW but limit application rendering speed to 45fps</li>
+<li>CTRL + NUMPAD 3: Force enabling ASW no matter what FPS is.</li>
+<li>CTRL + NUMPAD 4: Auto ASW based on application real time FPS (Default mode)</li>
+</ol>
+</li>
+<li>Disable ASW<ol>
+<li>Change &quot;EnableAsw&quot; value to 0 in Data/HVRSDKConfig.cfg and restart Hypereal VR Runtime</li>
+<li>OR by hot key CTRL + NUMPAD 1</li>
+</ol>
+</li>
+</ul>
+<p>Notes: ASW is global setting in Hypereal VR Runtime across all VR Clients, which means its state will keep until Runtime is restarted or a new setting is applied by hot key.</p>
+</div>
+</div>
+
+
+           </div>
+           <div class="articleComments">
+            
+           </div>
+          </div>
+          <footer>
+  
+    <div class="rst-footer-buttons" role="navigation" aria-label="footer navigation">
+      
+        <a href="Firmware Upgrade.html" class="btn btn-neutral float-right" title="Firmware Upgrade" accesskey="n" rel="next">Next <span class="fa fa-arrow-circle-right"></span></a>
+      
+      
+        <a href="index.html" class="btn btn-neutral" title="Welcome to Hypreal Utilities." accesskey="p" rel="prev"><span class="fa fa-arrow-circle-left"></span> Previous</a>
+      
+    </div>
+  
+
+  <hr/>
+
+  <div role="contentinfo">
+    <p>
+        &copy; Copyright 2017, yongzhoulu.
+
+    </p>
+  </div>
+  Built with <a href="http://sphinx-doc.org/">Sphinx</a> using a <a href="https://github.com/snide/sphinx_rtd_theme">theme</a> provided by <a href="https://readthedocs.org">Read the Docs</a>. 
+
+</footer>
+
+        </div>
+      </div>
+
+    </section>
+
+  </div>
+  
+
+
+  
+
+    <script type="text/javascript">
+        var DOCUMENTATION_OPTIONS = {
+            URL_ROOT:'../../',
+            VERSION:'0.0.1',
+            COLLAPSE_INDEX:false,
+            FILE_SUFFIX:'.html',
+            HAS_SOURCE:  true,
+            SOURCELINK_SUFFIX: '.txt'
+        };
+    </script>
+      <script type="text/javascript" src="../../_static/jquery.js"></script>
+      <script type="text/javascript" src="../../_static/underscore.js"></script>
+      <script type="text/javascript" src="../../_static/doctools.js"></script>
+
+  
+
+  
+  
+    <script type="text/javascript" src="../../_static/js/theme.js"></script>
+  
+
+  
+  
+  <script type="text/javascript">
+      jQuery(function () {
+          SphinxRtdTheme.StickyNav.enable();
+      });
+  </script>
+   
+
+</body>
+</html>

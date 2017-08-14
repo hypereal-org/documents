@@ -1,0 +1,389 @@
+
+
+<!DOCTYPE html>
+<!--[if IE 8]><html class="no-js lt-ie9" lang="en" > <![endif]-->
+<!--[if gt IE 8]><!--> <html class="no-js" lang="en" > <!--<![endif]-->
+<head>
+  <meta charset="utf-8">
+  
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  
+  <title>Graphics Context &mdash; test-read-the-docs-sample 0.0.1 documentation</title>
+  
+
+  
+  
+  
+  
+
+  
+
+  
+  
+    
+
+  
+
+  
+  
+    <link rel="stylesheet" href="../../../_static/css/theme.css" type="text/css" />
+  
+
+  
+
+  
+        <link rel="index" title="Index"
+              href="../../../genindex.html"/>
+        <link rel="search" title="Search" href="../../../search.html"/>
+    <link rel="top" title="test-read-the-docs-sample 0.0.1 documentation" href="../../../index.html"/>
+        <link rel="up" title="PC SDK Programming Guide" href="index.html"/>
+        <link rel="next" title="Introduction" href="Introduction.html"/>
+        <link rel="prev" title="Device" href="Device.html"/> 
+
+  
+  <script src="../../../_static/js/modernizr.min.js"></script>
+
+</head>
+
+<body class="wy-body-for-nav" role="document">
+
+   
+  <div class="wy-grid-for-nav">
+
+    
+    <nav data-toggle="wy-nav-shift" class="wy-nav-side">
+      <div class="wy-side-scroll">
+        <div class="wy-side-nav-search">
+          
+
+          
+            <a href="../../../index.html" class="icon icon-home"> test-read-the-docs-sample
+          
+
+          
+          </a>
+
+          
+            
+            
+              <div class="version">
+                0.0.1
+              </div>
+            
+          
+
+          
+<div role="search">
+  <form id="rtd-search-form" class="wy-form" action="../../../search.html" method="get">
+    <input type="text" name="q" placeholder="Search docs" />
+    <input type="hidden" name="check_keywords" value="yes" />
+    <input type="hidden" name="area" value="default" />
+  </form>
+</div>
+
+          
+        </div>
+
+        <div class="wy-menu wy-menu-vertical" data-spy="affix" role="navigation" aria-label="main navigation">
+          
+            
+            
+              
+            
+            
+              <p class="caption"><span class="caption-text">Contents:</span></p>
+<ul class="current">
+<li class="toctree-l1 current"><a class="reference internal" href="../../index.html">PC SDK</a><ul class="current">
+<li class="toctree-l2 current"><a class="reference internal" href="../index.html">Welcome to the Developer Documentation.</a><ul class="current">
+<li class="toctree-l3"><a class="reference internal" href="../getting-started/HW Specification.html">Getting Started Guide</a></li>
+<li class="toctree-l3"><a class="reference internal" href="../getting-started/PC SDK Setup.html">SDK Setup</a></li>
+<li class="toctree-l3 current"><a class="reference internal" href="index.html">PC SDK Programming Guide</a><ul class="current">
+<li class="toctree-l4"><a class="reference internal" href="Building with Hypereal VR SDK.html">Building with Hypereal VR SDK</a></li>
+<li class="toctree-l4"><a class="reference internal" href="Controller.html">Controller</a></li>
+<li class="toctree-l4"><a class="reference internal" href="Device.html">Device</a></li>
+<li class="toctree-l4 current"><a class="current reference internal" href="#">Graphics Context</a></li>
+<li class="toctree-l4"><a class="reference internal" href="Introduction.html">Introduction</a></li>
+<li class="toctree-l4"><a class="reference internal" href="Queue Ahead.html">Queue Ahead</a></li>
+<li class="toctree-l4"><a class="reference internal" href="Startup and Shutdown.html">Startup and Shutdown</a></li>
+<li class="toctree-l4"><a class="reference internal" href="Utilities.html">Utilities</a></li>
+</ul>
+</li>
+<li class="toctree-l3"><a class="reference internal" href="../unity-platform-plugin/index.html">Welcome to the Unity Platform Plugin Documentation.</a></li>
+<li class="toctree-l3"><a class="reference internal" href="../unity-plugin-user-guide/index.html">Welcome to the Unity Plugin User Guide.</a></li>
+<li class="toctree-l3"><a class="reference internal" href="../unreal-platform-plugin/index.html">Unreal Platform Plugin User Guide.</a></li>
+<li class="toctree-l3"><a class="reference internal" href="../unreal-plugin-user-guide/index.html">Welcome to Unreal Plugin User Guide.</a></li>
+<li class="toctree-l3"><a class="reference internal" href="../key-mapping.html">Key Mapping</a></li>
+<li class="toctree-l3"><a class="reference internal" href="../VRTK-plugin-programming-guide.html">VRTK Unity Plugin Programming Guide</a></li>
+</ul>
+</li>
+<li class="toctree-l2"><a class="reference internal" href="../../developer-release-guide/index.html">Release Guide.</a></li>
+<li class="toctree-l2"><a class="reference internal" href="../../utilities/index.html">Welcome to Hypreal Utilities.</a></li>
+</ul>
+</li>
+<li class="toctree-l1"><a class="reference internal" href="../../../platform-sdk/index.html">Platform SDK</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../../../bigData-sdk/index.html">BigData SDK</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../../../audio-sdk/index.html">Audio SDK</a></li>
+</ul>
+
+            
+          
+        </div>
+      </div>
+    </nav>
+
+    <section data-toggle="wy-nav-shift" class="wy-nav-content-wrap">
+
+      
+      <nav class="wy-nav-top" role="navigation" aria-label="top navigation">
+        
+          <i data-toggle="wy-nav-top" class="fa fa-bars"></i>
+          <a href="../../../index.html">test-read-the-docs-sample</a>
+        
+      </nav>
+
+
+      
+      <div class="wy-nav-content">
+        <div class="rst-content">
+          
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+<div role="navigation" aria-label="breadcrumbs navigation">
+
+  <ul class="wy-breadcrumbs">
+    
+      <li><a href="../../../index.html">Docs</a> &raquo;</li>
+        
+          <li><a href="../../index.html">PC SDK</a> &raquo;</li>
+        
+          <li><a href="../index.html">Welcome to the Developer Documentation.</a> &raquo;</li>
+        
+          <li><a href="index.html">PC SDK Programming Guide</a> &raquo;</li>
+        
+      <li>Graphics Context</li>
+    
+    
+      <li class="wy-breadcrumbs-aside">
+        
+            
+            <a href="../../../_sources/pc-sdk/developer-documentation/pc-sdk-programming-guide/Graphics Context.md.txt" rel="nofollow"> View page source</a>
+          
+        
+      </li>
+    
+  </ul>
+
+  
+  <hr/>
+</div>
+          <div role="main" class="document" itemscope="itemscope" itemtype="http://schema.org/Article">
+           <div itemprop="articleBody">
+            
+  <div class="section" id="graphics-context">
+<span id="graphics-context"></span><h1>Graphics Context<a class="headerlink" href="#graphics-context" title="Permalink to this headline">¶</a></h1>
+<p><br></p>
+<p>Graphics context is the abstract of Hypereal VR rendering solution. It provides important information for stereo rendering, such as render target size, eye poses. It submits render target textures, and copies mirror/distorted texture back.</p>
+<div class="section" id="creation-release-and-update">
+<span id="creation-release-and-update"></span><h2>Creation, Release and Update<a class="headerlink" href="#creation-release-and-update" title="Permalink to this headline">¶</a></h2>
+<p>Graphics context is created by a device.</p>
+<div class="highlight-default"><div class="highlight"><pre><span></span><span class="n">HyGraphicsContext</span> <span class="o">*</span><span class="n">vrGraphicsCxt</span> <span class="o">=</span> <span class="n">nullptr</span><span class="p">;</span>
+<span class="n">HyGraphicsContextDesc</span> <span class="n">cxtDesc</span><span class="p">;</span>
+<span class="n">cxtDesc</span><span class="o">.</span><span class="n">m_graphicsDevice</span> <span class="o">=</span> <span class="p">(</span><span class="n">ID3D11Device</span><span class="o">*</span><span class="p">)</span><span class="n">d3d11Device</span><span class="p">;</span>
+<span class="n">cxtDesc</span><span class="o">.</span><span class="n">m_graphicsAPI</span> <span class="o">=</span> <span class="n">HY_GRAPHICS_D3D11</span><span class="p">;</span>
+<span class="n">cxtDesc</span><span class="o">.</span><span class="n">m_pixelFormat</span> <span class="o">=</span> <span class="n">HY_TEXTURE_R8G8B8A8_UNORM_SRGB</span><span class="p">;</span>
+<span class="n">cxtDesc</span><span class="o">.</span><span class="n">m_pixelDensity</span> <span class="o">=</span> <span class="mf">1.0</span><span class="n">f</span><span class="p">;</span>
+<span class="n">cxtDesc</span><span class="o">.</span><span class="n">m_mirrorWidth</span> <span class="o">=</span> <span class="mi">1920</span><span class="p">;</span>
+<span class="n">cxtDesc</span><span class="o">.</span><span class="n">m_mirrorHeight</span> <span class="o">=</span> <span class="mi">1080</span><span class="p">;</span>
+<span class="n">cxtDesc</span><span class="o">.</span><span class="n">m_generateMips</span> <span class="o">=</span> <span class="n">false</span><span class="p">;</span>
+<span class="n">cxtDesc</span><span class="o">.</span><span class="n">m_flags</span> <span class="o">=</span> <span class="mi">0</span><span class="p">;</span>
+<span class="n">HyResult</span> <span class="n">r</span> <span class="o">=</span> <span class="n">vrDevice</span><span class="o">-&gt;</span><span class="n">CreateGraphicsContext</span><span class="p">(</span><span class="n">cxtDesc</span><span class="p">,</span> <span class="o">&amp;</span><span class="n">vrGraphicsCxt</span><span class="p">);</span>
+</pre></div>
+</div>
+<p>The first parameter is a descriptor composed by native graphics device, graphics API type, pixel format, pixel density and mirror/distorted texture size.</p>
+<p>To dispose a graphics context, just call its Release() method.</p>
+<div class="highlight-default"><div class="highlight"><pre><span></span><span class="n">vrGraphicsCxt</span><span class="o">-&gt;</span><span class="n">Release</span><span class="p">();</span>
+</pre></div>
+</div>
+<p>A device can create only one graphics context. An application must first release the created one and then create a new one if graphics context needs to be updated.</p>
+<div class="highlight-default"><div class="highlight"><pre><span></span><span class="n">vrGraphicsCxt</span><span class="o">-&gt;</span><span class="n">Release</span><span class="p">();</span>
+<span class="n">vrGraphicsCxt</span> <span class="o">=</span> <span class="n">nullptr</span><span class="p">;</span>
+<span class="n">HyResult</span> <span class="n">r</span> <span class="o">=</span> <span class="n">vrDevice</span><span class="o">-&gt;</span><span class="n">CreateGraphicsContext</span><span class="p">(</span><span class="n">cxtDesc</span><span class="p">,</span> <span class="o">&amp;</span><span class="n">vrGraphicsCxt</span><span class="p">);</span>
+</pre></div>
+</div>
+</div>
+<div class="section" id="configure-rendering">
+<span id="configure-rendering"></span><h2>Configure Rendering<a class="headerlink" href="#configure-rendering" title="Permalink to this headline">¶</a></h2>
+<p>The first step to configure stereo rendering is to calculate render target size.</p>
+<div class="highlight-default"><div class="highlight"><pre><span></span><span class="n">uint32_t</span> <span class="n">leftWidth</span> <span class="o">=</span> <span class="mi">0</span><span class="p">,</span> <span class="n">leftHeight</span> <span class="o">=</span> <span class="mi">0</span><span class="p">;</span>
+<span class="n">uint32_t</span> <span class="n">rightWidth</span> <span class="o">=</span> <span class="mi">0</span><span class="p">,</span> <span class="n">rightHeight</span> <span class="o">=</span> <span class="mi">0</span><span class="p">;</span>
+<span class="n">vrGraphicsCxt</span><span class="o">-&gt;</span><span class="n">GetRenderTargetSize</span><span class="p">(</span><span class="n">HY_EYE_LEFT</span><span class="p">,</span> <span class="n">leftWidth</span><span class="p">,</span> <span class="n">leftHeight</span><span class="p">);</span>
+<span class="n">vrGraphicsCxt</span><span class="o">-&gt;</span><span class="n">GetRenderTargetSize</span><span class="p">(</span><span class="n">HY_EYE_RIGHT</span><span class="p">,</span> <span class="n">rightWidth</span><span class="p">,</span> <span class="n">rightHeight</span><span class="p">);</span>
+</pre></div>
+</div>
+<p>These returned values are the final render target sizes if an application uses two render targets (one for each eye). However, if the application uses only one render target for two eyes, the final size is:</p>
+<div class="highlight-default"><div class="highlight"><pre><span></span>uint32_t finalWidth = leftWidth + rightWidth;
+uint32_t finalHeight = leftHeight &gt; rightHeight ? leftHeight : rightHeight;
+</pre></div>
+</div>
+<p>Note: the returned render target size is affected by pixel density (it's set when creating graphics context).</p>
+</div>
+<div class="section" id="rendering-loop">
+<span id="rendering-loop"></span><h2>Rendering Loop<a class="headerlink" href="#rendering-loop" title="Permalink to this headline">¶</a></h2>
+<p>The main loop of stereo rendering using Hypereal VR SDK includes following steps.
+1. Get HMD pose
+2. Get eye pose
+3. Get or use updated FOV
+4. Calculate projection matrix
+5. Render scene
+6. Calculate projection matrix</p>
+<ol class="simple">
+<li>Get HMD pose</li>
+</ol>
+<div class="highlight-default"><div class="highlight"><pre><span></span>    <span class="n">HyTrackingState</span> <span class="n">hmdTrackingState</span><span class="p">;</span>
+    <span class="n">HyResult</span> <span class="n">r</span> <span class="o">=</span> <span class="n">vrDevice</span><span class="o">-&gt;</span><span class="n">GetTrackingState</span><span class="p">(</span><span class="n">HY_SUBDEV_HMD</span><span class="p">,</span> <span class="mi">0</span><span class="p">,</span> <span class="n">hmdTrackingState</span><span class="p">);</span>
+</pre></div>
+</div>
+<p>The second parameter is current frame number (0 is acceptable)</p>
+<ol class="simple">
+<li>Get eye poses</li>
+</ol>
+<div class="highlight-default"><div class="highlight"><pre><span></span>    <span class="n">HyPose</span> <span class="n">eyePoses</span><span class="p">[</span><span class="n">HY_EYE_MAX</span><span class="p">];</span>
+    <span class="n">vrGraphicsCxt</span><span class="o">-&gt;</span><span class="n">GetEyePoses</span><span class="p">(</span><span class="n">hmdTrackingState</span><span class="o">.</span><span class="n">m_pose</span><span class="p">,</span> <span class="n">nullptr</span><span class="p">,</span> <span class="n">eyePoses</span><span class="p">);</span>
+</pre></div>
+</div>
+<p>An application can pass interpupillary distance as the second parameter, it's optional (default value will be used if passing nullptr)</p>
+<ol class="simple">
+<li>Get or use updated FOVs</li>
+</ol>
+<div class="highlight-default"><div class="highlight"><pre><span></span><span class="n">HyFov</span> <span class="n">fov</span><span class="p">[</span><span class="mi">2</span><span class="p">];</span>
+<span class="n">r</span> <span class="o">=</span> <span class="n">vrDevice</span><span class="o">-&gt;</span><span class="n">GetFloatArray</span><span class="p">(</span><span class="n">HY_PROPERTY_HMD_LEFT_EYE_FOV_FLOAT4_ARRAY</span><span class="p">,</span> <span class="n">fov</span><span class="p">[</span><span class="mi">0</span><span class="p">]</span><span class="o">.</span><span class="n">val</span><span class="p">,</span> <span class="mi">4</span><span class="p">);</span>
+<span class="n">r</span> <span class="o">=</span> <span class="n">vrDevice</span><span class="o">-&gt;</span><span class="n">GetFloatArray</span><span class="p">(</span><span class="n">HY_PROPERTY_HMD_RIGHT_EYE_FOV_FLOAT4_ARRAY</span><span class="p">,</span> <span class="n">fov</span><span class="p">[</span><span class="mi">1</span><span class="p">]</span><span class="o">.</span><span class="n">val</span><span class="p">,</span> <span class="mi">4</span><span class="p">);</span>
+</pre></div>
+</div>
+<p>An application can get the standard FOV values of current HMD.  And of course the application could change these values as needed, for some specifal gameplay / effects etc.</p>
+<ol class="simple">
+<li>Calculate projection matrix</li>
+</ol>
+<div class="highlight-default"><div class="highlight"><pre><span></span><span class="n">HyMat4</span> <span class="n">projMatrix</span><span class="p">;</span>
+<span class="n">vrGraphicsCxt</span><span class="o">-&gt;</span><span class="n">GetProjectionMatrix</span><span class="p">(</span><span class="n">fov</span><span class="p">[</span><span class="n">eyeIndex</span><span class="p">],</span> <span class="mf">0.1</span><span class="n">f</span><span class="p">,</span> <span class="mf">1000.0</span><span class="n">f</span><span class="p">,</span> <span class="n">true</span><span class="p">,</span> <span class="n">projMatrix</span><span class="p">);</span>
+</pre></div>
+</div>
+<p>Calculate projection matrix for each eye, the first parameter is the FOV for this eye.  The next two are z values of the near and far clipping planes. The fourth parameter specifies the coordinate system to use.</p>
+<ol class="simple">
+<li>Render scene</li>
+</ol>
+<p>Render the game scene to a render target texture with view matrix from eye pose and projection matrix above.</p>
+<ol class="simple">
+<li>Submit render target texture</li>
+</ol>
+<div class="highlight-default"><div class="highlight"><pre><span></span><span class="n">HyTextureDesc</span> <span class="n">texture</span><span class="p">;</span>
+<span class="n">texture</span><span class="o">.</span><span class="n">m_texture</span> <span class="o">=</span> <span class="p">(</span><span class="n">ID3D11Texture2D</span><span class="o">*</span><span class="p">)</span><span class="n">rtTextureHandle</span><span class="p">;</span>
+<span class="n">texture</span><span class="o">.</span><span class="n">m_uvOffset</span> <span class="o">=</span> <span class="n">HyVec2</span><span class="p">{</span> <span class="mf">0.0</span><span class="n">f</span><span class="p">,</span> <span class="mf">0.0</span><span class="n">f</span> <span class="p">};</span>
+<span class="n">texture</span><span class="o">.</span><span class="n">m_uvSize</span> <span class="o">=</span> <span class="n">HyVec2</span><span class="p">{</span> <span class="mf">1.0</span><span class="n">f</span><span class="p">,</span> <span class="mf">1.0</span><span class="n">f</span> <span class="p">};</span>
+<span class="n">texture</span><span class="o">.</span><span class="n">m_flipU</span> <span class="o">=</span> <span class="n">false</span><span class="p">;</span>
+<span class="n">texture</span><span class="o">.</span><span class="n">m_flipV</span> <span class="o">=</span> <span class="n">false</span><span class="p">;</span>
+<span class="n">HyResult</span> <span class="n">r</span> <span class="o">=</span> <span class="n">vrGraphicsCxt</span><span class="o">-&gt;</span><span class="n">Submit</span><span class="p">(</span><span class="mi">0</span><span class="p">,</span> <span class="o">&amp;</span><span class="n">texture</span><span class="p">,</span> <span class="mi">1</span><span class="p">,</span> <span class="n">nullptr</span><span class="p">,</span> <span class="n">nullptr</span><span class="p">);</span>
+</pre></div>
+</div>
+<p>The first parameter is current frame number (0 is acceptable, but if you want the tracking system to work more precisely for your application please specific detailed frame number of current frame). The second parameter is a pointer to HyTextureDesc which is the descriptor for render target texture. The descriptor is composed by texture handle, UV offset and size, flags to flip UV or no. The third parameter specifies the number of render target textures. The fourth parameter is optional, it specifies the region of render target textures. The last parameter is optional too, it specifies eye FOVs (default FOVs in HyDeviceDesc will be used if it is nullptr, but if you updated these FOVs please pass them here).</p>
+</div>
+<div class="section" id="mirror-distorted-texture">
+<span id="mirror-distorted-texture"></span><h2>Mirror/Distorted Texture<a class="headerlink" href="#mirror-distorted-texture" title="Permalink to this headline">¶</a></h2>
+<p>An application can get the mirror/distorted result if it needs.</p>
+<div class="highlight-default"><div class="highlight"><pre><span></span><span class="n">CD3D11_TEXTURE2D_DESC</span> <span class="n">texDesc</span><span class="p">(</span><span class="n">DXGI_FORMAT_R8G8B8A8_UNORM</span><span class="p">,</span> <span class="mi">1920</span><span class="p">,</span> <span class="mi">1080</span><span class="p">);</span>
+<span class="n">texDesc</span><span class="o">.</span><span class="n">BindFlags</span> <span class="o">=</span> <span class="n">D3D11_BIND_SHADER_RESOURCE</span> <span class="o">|</span> <span class="n">D3D11_BIND_RENDER_TARGET</span><span class="p">;</span>
+<span class="n">ID3D11Texture2D</span> <span class="o">*</span><span class="n">mirrorTexture</span> <span class="o">=</span> <span class="n">nullptr</span><span class="p">;</span>
+<span class="n">d3d11Device</span><span class="o">-&gt;</span><span class="n">CreateTexture2D</span><span class="p">(</span><span class="o">&amp;</span><span class="n">texDesc</span><span class="p">,</span> <span class="n">NULL</span><span class="p">,</span> <span class="o">&amp;</span><span class="n">mirrorTexture</span><span class="p">);</span>
+<span class="n">vrGraphicsCxt</span><span class="o">-&gt;</span><span class="n">CopyMirrorTexture</span><span class="p">(</span><span class="n">mirrorTexture</span><span class="p">,</span> <span class="mi">1920</span><span class="p">,</span> <span class="mi">1080</span><span class="p">,</span> <span class="n">nullptr</span><span class="p">);</span>
+</pre></div>
+</div>
+<p>The first three parameters are destination texture information including texture handle, texture size. The last parameter specifies the region of mirror/distorted texture to copy. It's optional, passing nullptr means the entire region.</p>
+</div>
+</div>
+
+
+           </div>
+           <div class="articleComments">
+            
+           </div>
+          </div>
+          <footer>
+  
+    <div class="rst-footer-buttons" role="navigation" aria-label="footer navigation">
+      
+        <a href="Introduction.html" class="btn btn-neutral float-right" title="Introduction" accesskey="n" rel="next">Next <span class="fa fa-arrow-circle-right"></span></a>
+      
+      
+        <a href="Device.html" class="btn btn-neutral" title="Device" accesskey="p" rel="prev"><span class="fa fa-arrow-circle-left"></span> Previous</a>
+      
+    </div>
+  
+
+  <hr/>
+
+  <div role="contentinfo">
+    <p>
+        &copy; Copyright 2017, yongzhoulu.
+
+    </p>
+  </div>
+  Built with <a href="http://sphinx-doc.org/">Sphinx</a> using a <a href="https://github.com/snide/sphinx_rtd_theme">theme</a> provided by <a href="https://readthedocs.org">Read the Docs</a>. 
+
+</footer>
+
+        </div>
+      </div>
+
+    </section>
+
+  </div>
+  
+
+
+  
+
+    <script type="text/javascript">
+        var DOCUMENTATION_OPTIONS = {
+            URL_ROOT:'../../../',
+            VERSION:'0.0.1',
+            COLLAPSE_INDEX:false,
+            FILE_SUFFIX:'.html',
+            HAS_SOURCE:  true,
+            SOURCELINK_SUFFIX: '.txt'
+        };
+    </script>
+      <script type="text/javascript" src="../../../_static/jquery.js"></script>
+      <script type="text/javascript" src="../../../_static/underscore.js"></script>
+      <script type="text/javascript" src="../../../_static/doctools.js"></script>
+
+  
+
+  
+  
+    <script type="text/javascript" src="../../../_static/js/theme.js"></script>
+  
+
+  
+  
+  <script type="text/javascript">
+      jQuery(function () {
+          SphinxRtdTheme.StickyNav.enable();
+      });
+  </script>
+   
+
+</body>
+</html>

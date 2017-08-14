@@ -1,0 +1,325 @@
+
+
+<!DOCTYPE html>
+<!--[if IE 8]><html class="no-js lt-ie9" lang="en" > <![endif]-->
+<!--[if gt IE 8]><!--> <html class="no-js" lang="en" > <!--<![endif]-->
+<head>
+  <meta charset="utf-8">
+  
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  
+  <title>Pop And Free Message &mdash; test-read-the-docs-sample 0.0.1 documentation</title>
+  
+
+  
+  
+  
+  
+
+  
+
+  
+  
+    
+
+  
+
+  
+  
+    <link rel="stylesheet" href="../../_static/css/theme.css" type="text/css" />
+  
+
+  
+
+  
+        <link rel="index" title="Index"
+              href="../../genindex.html"/>
+        <link rel="search" title="Search" href="../../search.html"/>
+    <link rel="top" title="test-read-the-docs-sample 0.0.1 documentation" href="../../index.html"/>
+        <link rel="up" title="Welcome to the Developer Documentation." href="index.html"/>
+        <link rel="next" title="Room" href="Room.html"/>
+        <link rel="prev" title="Networking" href="Networking.html"/> 
+
+  
+  <script src="../../_static/js/modernizr.min.js"></script>
+
+</head>
+
+<body class="wy-body-for-nav" role="document">
+
+   
+  <div class="wy-grid-for-nav">
+
+    
+    <nav data-toggle="wy-nav-shift" class="wy-nav-side">
+      <div class="wy-side-scroll">
+        <div class="wy-side-nav-search">
+          
+
+          
+            <a href="../../index.html" class="icon icon-home"> test-read-the-docs-sample
+          
+
+          
+          </a>
+
+          
+            
+            
+              <div class="version">
+                0.0.1
+              </div>
+            
+          
+
+          
+<div role="search">
+  <form id="rtd-search-form" class="wy-form" action="../../search.html" method="get">
+    <input type="text" name="q" placeholder="Search docs" />
+    <input type="hidden" name="check_keywords" value="yes" />
+    <input type="hidden" name="area" value="default" />
+  </form>
+</div>
+
+          
+        </div>
+
+        <div class="wy-menu wy-menu-vertical" data-spy="affix" role="navigation" aria-label="main navigation">
+          
+            
+            
+              
+            
+            
+              <p class="caption"><span class="caption-text">Contents:</span></p>
+<ul class="current">
+<li class="toctree-l1"><a class="reference internal" href="../../pc-sdk/index.html">PC SDK</a></li>
+<li class="toctree-l1 current"><a class="reference internal" href="../index.html">Platform SDK</a><ul class="current">
+<li class="toctree-l2 current"><a class="reference internal" href="index.html">Welcome to the Developer Documentation.</a><ul class="current">
+<li class="toctree-l3"><a class="reference internal" href="Authorization.html">Authorization</a></li>
+<li class="toctree-l3"><a class="reference internal" href="Building With Hypereal Platform SDK.html">Building With Hypereal Platform SDK</a></li>
+<li class="toctree-l3"><a class="reference internal" href="Matchmaking.html">Matchmaking</a></li>
+<li class="toctree-l3"><a class="reference internal" href="Networking.html">Networking</a></li>
+<li class="toctree-l3 current"><a class="current reference internal" href="#">Pop And Free Message</a><ul>
+<li class="toctree-l4"><a class="reference internal" href="#hyprequest-t">hypRequest_t</a></li>
+<li class="toctree-l4"><a class="reference internal" href="#pop-message">Pop Message</a></li>
+<li class="toctree-l4"><a class="reference internal" href="#extract-message">Extract Message</a></li>
+<li class="toctree-l4"><a class="reference internal" href="#free-message">Free Message</a></li>
+</ul>
+</li>
+<li class="toctree-l3"><a class="reference internal" href="Room.html">Room</a></li>
+<li class="toctree-l3"><a class="reference internal" href="Startup And Shutdown.html">Startup and Shutdown</a></li>
+<li class="toctree-l3"><a class="reference internal" href="User.html">User</a></li>
+</ul>
+</li>
+<li class="toctree-l2"><a class="reference internal" href="../developer-release-guide/index.html">Welcome to the Developer Release Guide.</a></li>
+</ul>
+</li>
+<li class="toctree-l1"><a class="reference internal" href="../../bigData-sdk/index.html">BigData SDK</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../../audio-sdk/index.html">Audio SDK</a></li>
+</ul>
+
+            
+          
+        </div>
+      </div>
+    </nav>
+
+    <section data-toggle="wy-nav-shift" class="wy-nav-content-wrap">
+
+      
+      <nav class="wy-nav-top" role="navigation" aria-label="top navigation">
+        
+          <i data-toggle="wy-nav-top" class="fa fa-bars"></i>
+          <a href="../../index.html">test-read-the-docs-sample</a>
+        
+      </nav>
+
+
+      
+      <div class="wy-nav-content">
+        <div class="rst-content">
+          
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+<div role="navigation" aria-label="breadcrumbs navigation">
+
+  <ul class="wy-breadcrumbs">
+    
+      <li><a href="../../index.html">Docs</a> &raquo;</li>
+        
+          <li><a href="../index.html">Platform SDK</a> &raquo;</li>
+        
+          <li><a href="index.html">Welcome to the Developer Documentation.</a> &raquo;</li>
+        
+      <li>Pop And Free Message</li>
+    
+    
+      <li class="wy-breadcrumbs-aside">
+        
+            
+            <a href="../../_sources/platform-sdk/development-documentation/Pop And Free Message.md.txt" rel="nofollow"> View page source</a>
+          
+        
+      </li>
+    
+  </ul>
+
+  
+  <hr/>
+</div>
+          <div role="main" class="document" itemscope="itemscope" itemtype="http://schema.org/Article">
+           <div itemprop="articleBody">
+            
+  <div class="section" id="pop-and-free-message">
+<span id="pop-and-free-message"></span><h1>Pop And Free Message<a class="headerlink" href="#pop-and-free-message" title="Permalink to this headline">¶</a></h1>
+<p><br></p>
+<div class="section" id="hyprequest-t">
+<span id="hyprequest-t"></span><h2>hypRequest_t<a class="headerlink" href="#hyprequest-t" title="Permalink to this headline">¶</a></h2>
+<p>All interfaces declared with return type hypRequest_t will generate response message which has a specified message type.</p>
+<p>For example, once you have called:</p>
+<div class="highlight-default"><div class="highlight"><pre><span></span><span class="n">HypClient</span><span class="p">()</span><span class="o">-&gt;</span><span class="n">IsUserAuthorized</span><span class="p">()</span>
+</pre></div>
+</div>
+<p>then a message with type EHypMessageType_Client_IsUserAuthorized will be generated in response.</p>
+</div>
+<div class="section" id="pop-message">
+<span id="pop-message"></span><h2>Pop Message<a class="headerlink" href="#pop-message" title="Permalink to this headline">¶</a></h2>
+<p>You can pop message from the queue(FIFO order) by interface:</p>
+<div class="highlight-default"><div class="highlight"><pre><span></span><span class="n">HypMessage</span> <span class="o">*</span><span class="n">msg</span> <span class="o">=</span> <span class="n">HypMessageManager</span><span class="p">()</span><span class="o">-&gt;</span><span class="n">Pop</span><span class="p">();</span>
+</pre></div>
+</div>
+</div>
+<div class="section" id="extract-message">
+<span id="extract-message"></span><h2>Extract Message<a class="headerlink" href="#extract-message" title="Permalink to this headline">¶</a></h2>
+<p>First of all, get the message type via</p>
+<div class="highlight-default"><div class="highlight"><pre><span></span><span class="n">msg</span><span class="o">-&gt;</span><span class="n">GetType</span><span class="p">()</span>
+</pre></div>
+</div>
+<p>Then check if the message has error by calling</p>
+<div class="highlight-default"><div class="highlight"><pre><span></span><span class="n">msg</span><span class="o">-&gt;</span><span class="n">HasError</span><span class="p">()</span>
+</pre></div>
+</div>
+<p>If has error, get the error information by</p>
+<div class="highlight-default"><div class="highlight"><pre><span></span><span class="n">msg</span><span class="o">-&gt;</span><span class="n">GetError</span><span class="p">()</span>
+</pre></div>
+</div>
+<p>If it has no error, and has payload data, use GetDataHandle() to get data handle, then use the corresponding ExtractMessageData() API to get detail data.</p>
+<p>For example, if we received a message with type ::EHypMessageType_Room_GetCurrentRoom</p>
+<div class="highlight-default"><div class="highlight"><pre><span></span><span class="k">if</span><span class="p">(</span><span class="n">msg</span><span class="o">-&gt;</span><span class="n">HasError</span><span class="p">())</span>
+<span class="p">{</span>
+    <span class="n">hypDataError</span> <span class="o">*</span><span class="n">err</span> <span class="o">=</span> <span class="n">msg</span><span class="o">-&gt;</span><span class="n">GetError</span><span class="p">();</span>
+    <span class="k">if</span><span class="p">(</span><span class="n">err</span><span class="p">)</span>
+        <span class="o">//</span><span class="n">TODO</span><span class="p">:</span> <span class="n">output</span> <span class="n">error</span> <span class="n">information</span>
+<span class="p">}</span>
+<span class="k">else</span>
+<span class="p">{</span>
+    <span class="n">hypDataRoomInfo</span> <span class="o">*</span><span class="n">room</span> <span class="o">=</span> <span class="n">nullptr</span><span class="p">;</span>
+    <span class="k">if</span><span class="p">(</span><span class="n">HypRoom</span><span class="p">()</span><span class="o">-&gt;</span><span class="n">ExtractMessageData</span><span class="p">(</span><span class="n">msg</span><span class="o">-&gt;</span><span class="n">GetDataHandle</span><span class="p">,</span> <span class="o">&amp;</span><span class="n">room</span><span class="p">))</span>
+    <span class="p">{</span>
+        <span class="o">//</span><span class="n">TODO</span><span class="p">:</span> <span class="n">output</span> <span class="n">room</span> <span class="n">information</span>
+    <span class="p">}</span>
+    <span class="k">else</span>
+    <span class="p">{</span>
+        <span class="n">printf</span><span class="p">(</span><span class="s2">&quot;FATAL error: message didn&#39;t contain valid data!</span><span class="se">\n</span><span class="s2">&quot;</span><span class="p">);</span>
+    <span class="p">}</span>
+<span class="p">}</span>
+</pre></div>
+</div>
+</div>
+<div class="section" id="free-message">
+<span id="free-message"></span><h2>Free Message<a class="headerlink" href="#free-message" title="Permalink to this headline">¶</a></h2>
+<p>Each message should eventually be freed with</p>
+<div class="highlight-default"><div class="highlight"><pre><span></span><span class="n">HypMessageManager</span><span class="p">()</span><span class="o">-&gt;</span><span class="n">Free</span><span class="p">(</span><span class="n">msg</span><span class="p">)</span>
+</pre></div>
+</div>
+<p>After this, all previous data(including data handle) derived from HypMessageManager()-&gt;Pop() is unusable.</p>
+</div>
+</div>
+
+
+           </div>
+           <div class="articleComments">
+            
+           </div>
+          </div>
+          <footer>
+  
+    <div class="rst-footer-buttons" role="navigation" aria-label="footer navigation">
+      
+        <a href="Room.html" class="btn btn-neutral float-right" title="Room" accesskey="n" rel="next">Next <span class="fa fa-arrow-circle-right"></span></a>
+      
+      
+        <a href="Networking.html" class="btn btn-neutral" title="Networking" accesskey="p" rel="prev"><span class="fa fa-arrow-circle-left"></span> Previous</a>
+      
+    </div>
+  
+
+  <hr/>
+
+  <div role="contentinfo">
+    <p>
+        &copy; Copyright 2017, yongzhoulu.
+
+    </p>
+  </div>
+  Built with <a href="http://sphinx-doc.org/">Sphinx</a> using a <a href="https://github.com/snide/sphinx_rtd_theme">theme</a> provided by <a href="https://readthedocs.org">Read the Docs</a>. 
+
+</footer>
+
+        </div>
+      </div>
+
+    </section>
+
+  </div>
+  
+
+
+  
+
+    <script type="text/javascript">
+        var DOCUMENTATION_OPTIONS = {
+            URL_ROOT:'../../',
+            VERSION:'0.0.1',
+            COLLAPSE_INDEX:false,
+            FILE_SUFFIX:'.html',
+            HAS_SOURCE:  true,
+            SOURCELINK_SUFFIX: '.txt'
+        };
+    </script>
+      <script type="text/javascript" src="../../_static/jquery.js"></script>
+      <script type="text/javascript" src="../../_static/underscore.js"></script>
+      <script type="text/javascript" src="../../_static/doctools.js"></script>
+
+  
+
+  
+  
+    <script type="text/javascript" src="../../_static/js/theme.js"></script>
+  
+
+  
+  
+  <script type="text/javascript">
+      jQuery(function () {
+          SphinxRtdTheme.StickyNav.enable();
+      });
+  </script>
+   
+
+</body>
+</html>
